@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( EdgeDetection )
+find_package( OpenCV REQUIRED )
+add_executable( EdgeDetection colorsegmentation.cpp )
+target_link_libraries( EdgeDetection ${OpenCV_LIBS} )
